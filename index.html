@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Taller Typescrit 2</title>
+    <link rel="icon" bref="data:,">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="module" src='/scripts/main.js'></script>
+    <style>
+        body{
+            background-color: #f8f9fa;
+            font-family:'Arial';
+        }
+        h1{
+            color: white;
+            font-size: 16px;
+            background-color:rgb(2, 30, 53);
+            padding: 20px 0;
+        }
+        .table{
+            width:60%;
+            margin-left: 5%;
+            border-collapse: collapse;
+        }
+        .table th, .table td{
+            
+            background-color: lightgrey;
+            border: 1px solid rgba(0, 0, 0, 0.288);
+            padding: 8px;
+            text-align: left;
+        }
+        .table th{
+            background-color: rgb(2, 30, 53);
+            color: white;
+        }
+        .promedio{
+            background-color: lightgreen;
+        }
+        #content {
+            display: flex;
+        }
+        .half-width {
+            flex: 1;
+        }
+        #serieInfo{
+            max-width: 30%;
+            text-align: left;
+            margin-right: 20%;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>TV Series</h1>
+    <div id="content">
+        <div class="half-width" id="tableContainer">
+            <table class="table" id="SeriesTable">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col"> Nombre</th>
+                        <th scope="col">Channel</th>
+                        <th scope="col">Seasons</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="half-width" id="serieInfo"></div>
+    </div>
+</body>
+</html>
