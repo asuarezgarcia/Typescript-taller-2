@@ -32,6 +32,8 @@ function mostrarSeries(serie1) {
         // Crear el cuadro con la imagen, el nombre, la descripción y el enlace
         var serieImage = document.createElement('img');
         serieImage.src = serie1.image;
+        serieImage.style.width = '100%';
+        serieImage.style.height = 'auto';
         var serieTitle = document.createElement('h2');
         serieTitle.textContent = serie1.name;
         var serieDescription = document.createElement('p');
